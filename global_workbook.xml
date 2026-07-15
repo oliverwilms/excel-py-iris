@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="IRIS" version="26" zv="IRIS for UNIX (Ubuntu Server LTS for x86-64 Containers) 2026.1 (Build 234U)" ts="2026-07-12 23:01:23">
+<Global>
+<Node><Sub>^wbook</Sub>
+<Node><Sub>Sheet1</Sub>
+<Node><Sub>A1</Sub>
+<Data>Date</Data>
+</Node>
+<Node><Sub>A10</Sub>
+<Data>2022-12-24 00:00:00</Data>
+</Node>
+<Node><Sub>A11</Sub>
+<Data>2022-12-24 00:00:00</Data>
+</Node>
+<Node><Sub>A12</Sub>
+<Data>2022-12-29 00:00:00</Data>
+</Node>
+<Node><Sub>A13</Sub>
+<Data>2023-01-01 00:00:00</Data>
+</Node>
+<Node><Sub>A14</Sub>
+<Data>2023-01-02 00:00:00</Data>
+</Node>
+<Node><Sub>A15</Sub>
+<Data>2023-01-09 00:00:00</Data>
+</Node>
+<Node><Sub>A16</Sub>
+<Data>2023-01-16 00:00:00</Data>
+</Node>
+<Node><Sub>A17</Sub>
+<Data>2023-01-20 00:00:00</Data>
+</Node>
+<Node><Sub>A18</Sub>
+<Data>2023-02-06 00:00:00</Data>
+</Node>
+<Node><Sub>A19</Sub>
+<Data>2023-02-09 00:00:00</Data>
+</Node>
+<Node><Sub>A20</Sub>
+<Data>2023-02-13 00:00:00</Data>
+</Node>
+<Node><Sub>A21</Sub>
+<Data>2023-02-13 00:00:00</Data>
+</Node>
+<Node><Sub>A22</Sub>
+<Data>2023-02-17 00:00:00</Data>
+</Node>
+<Node><Sub>A23</Sub>
+<Data>2023-03-07 00:00:00</Data>
+</Node>
+<Node><Sub>A24</Sub>
+<Data>2023-03-22 00:00:00</Data>
+</Node>
+<Node><Sub>A25</Sub>
+<Data>2023-03-26 00:00:00</Data>
+</Node>
+<Node><Sub>A26</Sub>
+<Data>2023-03-26 00:00:00</Data>
+</Node>
+<Node><Sub>A27</Sub>
+<Data>2023-04-04 00:00:00</Data>
+</Node>
+<Node><Sub>A28</Sub>
+<Data>2023-04-24 00:00:00</Data>
+</Node>
+<Node><Sub>A29</Sub>
+<Data>2023-04-30 00:00:00</Data>
+</Node>
+<Node><Sub>A3</Sub>
+<Data>2022-07-23 00:00:00</Data>
+</Node>
+<Node><Sub>A30</Sub>
+<Data>2023-06-24 00:00:00</Data>
+</Node>
+<Node><Sub>A31</Sub>
+<Data>2023-12-31 00:00:00</Data>
+</Node>
+<Node><Sub>A32</Sub>
+<Data>2024-02-13 00:00:00</Data>
+</Node>
+<Node><Sub>A33</Sub>
+<Data>2024-02-15 00:00:00</Data>
+</Node>
+<Node><Sub>A34</Sub>
+<Data>2024-02-28 00:00:00</Data>
+</Node>
+<Node><Sub>A35</Sub>
+<Data>2024-03-08 00:00:00</Data>
+</Node>
+<Node><Sub>A36</Sub>
+<Data>2024-03-11 00:00:00</Data>
+</Node>
+<Node><Sub>A37</Sub>
+<Data>2024-03-17 00:00:00</Data>
+</Node>
+<Node><Sub>A38</Sub>
+<Data>2024-03-26 00:00:00</Data>
+</Node>
+<Node><Sub>A39</Sub>
+<Data>2024-04-01 00:00:00</Data>
+</Node>
+<Node><Sub>A4</Sub>
+<Data>2022-07-29 00:00:00</Data>
+</Node>
+<Node><Sub>A40</Sub>
+<Data>2024-05-12 00:00:00</Data>
+</Node>
+<Node><Sub>A41</Sub>
+<Data>2025-04-15 00:00:00</Data>
+</Node>
+<Node><Sub>A42</Sub>
+<Data>2025-04-15 00:00:00</Data>
+</Node>
+<Node><Sub>A43</Sub>
+<Data>2025-04-15 00:00:00</Data>
+</Node>
+<Node><Sub>A44</Sub>
+<Data>2025-05-03 00:00:00</Data>
+</Node>
+<Node><Sub>A45</Sub>
+<Data>2025-05-11 00:00:00</Data>
+</Node>
+<Node><Sub>A5</Sub>
+<Data>2022-11-02 00:00:00</Data>
+</Node>
+<Node><Sub>A6</Sub>
+<Data>2022-11-04 00:00:00</Data>
+</Node>
+<Node><Sub>A7</Sub>
+<Data>2022-11-09 00:00:00</Data>
+</Node>
+<Node><Sub>A8</Sub>
+<Data>2022-11-23 00:00:00</Data>
+</Node>
+<Node><Sub>A9</Sub>
+<Data>2022-12-23 00:00:00</Data>
+</Node>
+<Node><Sub>B1</Sub>
+<Data>Check</Data>
+</Node>
+<Node><Sub>C1</Sub>
+<Data>Merchant</Data>
+</Node>
+<Node><Sub>C10</Sub>
+<Data>Talin Wilms</Data>
+</Node>
+<Node><Sub>C11</Sub>
+<Data>Jingky Millwood</Data>
+</Node>
+<Node><Sub>C12</Sub>
+<Data>Costco</Data>
+</Node>
+<Node><Sub>C13</Sub>
+<Data>Costco</Data>
+</Node>
+<Node><Sub>C14</Sub>
+<Data>Rose Wilms</Data>
+</Node>
+<Node><Sub>C15</Sub>
+<Data>Rose Wilms</Data>
+</Node>
+<Node><Sub>C16</Sub>
+<Data>Rose Wilms</Data>
+</Node>
+<Node><Sub>C17</Sub>
+<Data>Rose Wilms</Data>
+</Node>
+<Node><Sub>C18</Sub>
+<Data>Rose Wilms</Data>
+</Node>
+<Node><Sub>C19</Sub>
+<Data>Rose Wilms</Data>
+</Node>
+<Node><Sub>C20</Sub>
+<Data>Rose Wilms</Data>
+</Node>
+<Node><Sub>C21</Sub>
+<Data>Rose Wilms</Data>
+</Node>
+<Node><Sub>C22</Sub>
+<Data>Rose Wilms</Data>
+</Node>
+<Node><Sub>C23</Sub>
+<Data>Rose Wilms</Data>
+</Node>
+<Node><Sub>C24</Sub>
+<Data>Rose Wilms</Data>
+</Node>
+<Node><Sub>C25</Sub>
+<Data>Rose Wilms</Data>
+</Node>
+<Node><Sub>C26</Sub>
+<Data>Rose Wilms</Data>
+</Node>
+<Node><Sub>C27</Sub>
+<Data>Rose Wilms</Data>
+</Node>
+<Node><Sub>C28</Sub>
+<Data>Rose Wilms</Data>
+</Node>
+<Node><Sub>C29</Sub>
+<Data>Rose Wilms</Data>
+</Node>
+<Node><Sub>C3</Sub>
+<Data>Amazon</Data>
+</Node>
+<Node><Sub>C30</Sub>
+<Data>Talin Wilms</Data>
+</Node>
+<Node><Sub>C31</Sub>
+<Data>Rose Wilms</Data>
+</Node>
+<Node><Sub>C32</Sub>
+<Data>Costco</Data>
+</Node>
+<Node><Sub>C33</Sub>
+<Data>Jonathan Wilms</Data>
+</Node>
+<Node><Sub>C34</Sub>
+<Data>Rose Wilms</Data>
+</Node>
+<Node><Sub>C35</Sub>
+<Data>Chase</Data>
+</Node>
+<Node><Sub>C36</Sub>
+<Data>Matt Harris</Data>
+</Node>
+<Node><Sub>C37</Sub>
+<Data>Rose Wilms</Data>
+</Node>
+<Node><Sub>C38</Sub>
+<Data>USPS</Data>
+</Node>
+<Node><Sub>C39</Sub>
+<Data>Rose Wilms</Data>
+</Node>
+<Node><Sub>C4</Sub>
+<Data>Filter Change</Data>
+</Node>
+<Node><Sub>C40</Sub>
+<Data>Rose Wilms</Data>
+</Node>
+<Node><Sub>C41</Sub>
+<Data>PNC</Data>
+</Node>
+<Node><Sub>C42</Sub>
+<Data>USPS</Data>
+</Node>
+<Node><Sub>C43</Sub>
+<Data>Rose Wilms</Data>
+</Node>
+<Node><Sub>C44</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>C45</Sub>
+<Data>Jonathan Wilms</Data>
+</Node>
+<Node><Sub>C5</Sub>
+<Data>CUTX</Data>
+</Node>
+<Node><Sub>C6</Sub>
+<Data>Coyle</Data>
+</Node>
+<Node><Sub>C7</Sub>
+<Data>Filter Change</Data>
+</Node>
+<Node><Sub>C8</Sub>
+<Data>Rose Wilms</Data>
+</Node>
+<Node><Sub>C9</Sub>
+<Data>Rose Wilms</Data>
+</Node>
+<Node><Sub>D1</Sub>
+<Data>Category</Data>
+</Node>
+<Node><Sub>D10</Sub>
+<Data>Gifts</Data>
+</Node>
+<Node><Sub>D11</Sub>
+<Data>Gifts</Data>
+</Node>
+<Node><Sub>D12</Sub>
+<Data>Groceries</Data>
+</Node>
+<Node><Sub>D14</Sub>
+<Data>Groceries</Data>
+</Node>
+<Node><Sub>D15</Sub>
+<Data>Groceries</Data>
+</Node>
+<Node><Sub>D16</Sub>
+<Data>Groceries</Data>
+</Node>
+<Node><Sub>D17</Sub>
+<Data>Mahal</Data>
+</Node>
+<Node><Sub>D18</Sub>
+<Data>Groceries</Data>
+</Node>
+<Node><Sub>D19</Sub>
+<Data>Mahal</Data>
+</Node>
+<Node><Sub>D20</Sub>
+<Data>Transfer</Data>
+</Node>
+<Node><Sub>D21</Sub>
+<Data>Groceries</Data>
+</Node>
+<Node><Sub>D22</Sub>
+<Data>Mahal</Data>
+</Node>
+<Node><Sub>D23</Sub>
+<Data>Mahal</Data>
+</Node>
+<Node><Sub>D24</Sub>
+<Data>Mahal</Data>
+</Node>
+<Node><Sub>D25</Sub>
+<Data>Mahal</Data>
+</Node>
+<Node><Sub>D26</Sub>
+<Data>Groceries</Data>
+</Node>
+<Node><Sub>D27</Sub>
+<Data>Mahal</Data>
+</Node>
+<Node><Sub>D28</Sub>
+<Data>Mahal</Data>
+</Node>
+<Node><Sub>D29</Sub>
+<Data>Mahal</Data>
+</Node>
+<Node><Sub>D30</Sub>
+<Data>Gifts</Data>
+</Node>
+<Node><Sub>D31</Sub>
+<Data>Mahal</Data>
+</Node>
+<Node><Sub>D32</Sub>
+<Data>Groceries</Data>
+</Node>
+<Node><Sub>D33</Sub>
+<Data>Jonathan</Data>
+</Node>
+<Node><Sub>D34</Sub>
+<Data>Mahal</Data>
+</Node>
+<Node><Sub>D35</Sub>
+<Data>Transfer</Data>
+</Node>
+<Node><Sub>D36</Sub>
+<Data>Housing</Data>
+</Node>
+<Node><Sub>D37</Sub>
+<Data>Mahal</Data>
+</Node>
+<Node><Sub>D38</Sub>
+<Data>Automobile</Data>
+</Node>
+<Node><Sub>D39</Sub>
+<Data>Mahal</Data>
+</Node>
+<Node><Sub>D4</Sub>
+<Data>Filter</Data>
+</Node>
+<Node><Sub>D41</Sub>
+<Data>Transfer</Data>
+</Node>
+<Node><Sub>D42</Sub>
+<Data>Tax</Data>
+</Node>
+<Node><Sub>D43</Sub>
+<Data>Mahal</Data>
+</Node>
+<Node><Sub>D44</Sub>
+<Data>Leisure</Data>
+</Node>
+<Node><Sub>D45</Sub>
+<Data>Jonathan</Data>
+</Node>
+<Node><Sub>D5</Sub>
+<Data>Transfer</Data>
+</Node>
+<Node><Sub>D7</Sub>
+<Data>Filter</Data>
+</Node>
+<Node><Sub>D8</Sub>
+<Data>Mahal</Data>
+</Node>
+<Node><Sub>D9</Sub>
+<Data>Gifts</Data>
+</Node>
+<Node><Sub>E1</Sub>
+<Data>SubCategory</Data>
+</Node>
+<Node><Sub>F1</Sub>
+<Data>Memo</Data>
+</Node>
+<Node><Sub>F10</Sub>
+<Data>Juicer</Data>
+</Node>
+<Node><Sub>F11</Sub>
+<Data>For Gift cards (Lindskog)</Data>
+</Node>
+<Node><Sub>F12</Sub>
+<Data>Credit Card Reward</Data>
+</Node>
+<Node><Sub>F13</Sub>
+<Data>Costco 2% Reward Certificate</Data>
+</Node>
+<Node><Sub>F25</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>F29</Sub>
+<Data>??</Data>
+</Node>
+<Node><Sub>F3</Sub>
+<Data>Air Filter</Data>
+</Node>
+<Node><Sub>F36</Sub>
+<Data>A/C check</Data>
+</Node>
+<Node><Sub>F40</Sub>
+<Data>Valet</Data>
+</Node>
+<Node><Sub>F6</Sub>
+<Data>The Henry</Data>
+</Node>
+<Node><Sub>F9</Sub>
+<Data>Russel</Data>
+</Node>
+<Node><Sub>G1</Sub>
+<Data>Credit</Data>
+</Node>
+<Node><Sub>G10</Sub>
+<Data>100</Data>
+</Node>
+<Node><Sub>G11</Sub>
+<Data>40</Data>
+</Node>
+<Node><Sub>G12</Sub>
+<Data>456.41</Data>
+</Node>
+<Node><Sub>G13</Sub>
+<Data>179.27</Data>
+</Node>
+<Node><Sub>G17</Sub>
+<Data>30</Data>
+</Node>
+<Node><Sub>G19</Sub>
+<Data>520</Data>
+</Node>
+<Node><Sub>G23</Sub>
+<Data>20</Data>
+</Node>
+<Node><Sub>G25</Sub>
+<Data>700</Data>
+</Node>
+<Node><Sub>G33</Sub>
+<Data>70</Data>
+</Node>
+<Node><Sub>G35</Sub>
+<Data>260</Data>
+</Node>
+<Node><Sub>G38</Sub>
+<Data>12.92</Data>
+</Node>
+<Node><Sub>G41</Sub>
+<Data>139</Data>
+</Node>
+<Node><Sub>G45</Sub>
+<Data>40</Data>
+</Node>
+<Node><Sub>G5</Sub>
+<Data>26</Data>
+</Node>
+<Node><Sub>G8</Sub>
+<Data>100</Data>
+</Node>
+<Node><Sub>H1</Sub>
+<Data>Debit</Data>
+</Node>
+<Node><Sub>H14</Sub>
+<Data>220</Data>
+</Node>
+<Node><Sub>H15</Sub>
+<Data>100</Data>
+</Node>
+<Node><Sub>H16</Sub>
+<Data>200</Data>
+</Node>
+<Node><Sub>H18</Sub>
+<Data>60</Data>
+</Node>
+<Node><Sub>H20</Sub>
+<Data>330</Data>
+</Node>
+<Node><Sub>H21</Sub>
+<Data>200</Data>
+</Node>
+<Node><Sub>H22</Sub>
+<Data>40</Data>
+</Node>
+<Node><Sub>H23</Sub>
+<Data>20</Data>
+</Node>
+<Node><Sub>H24</Sub>
+<Data>34</Data>
+</Node>
+<Node><Sub>H26</Sub>
+<Data>200</Data>
+</Node>
+<Node><Sub>H27</Sub>
+<Data>200</Data>
+</Node>
+<Node><Sub>H28</Sub>
+<Data>100</Data>
+</Node>
+<Node><Sub>H29</Sub>
+<Data>160</Data>
+</Node>
+<Node><Sub>H3</Sub>
+<Data>33.15</Data>
+</Node>
+<Node><Sub>H30</Sub>
+<Data>45</Data>
+</Node>
+<Node><Sub>H31</Sub>
+<Data>4.47</Data>
+</Node>
+<Node><Sub>H32</Sub>
+<Data>75.76</Data>
+</Node>
+<Node><Sub>H34</Sub>
+<Data>170</Data>
+</Node>
+<Node><Sub>H36</Sub>
+<Data>125</Data>
+</Node>
+<Node><Sub>H37</Sub>
+<Data>138.51</Data>
+</Node>
+<Node><Sub>H39</Sub>
+<Data>10</Data>
+</Node>
+<Node><Sub>H4</Sub>
+<Data>0</Data>
+</Node>
+<Node><Sub>H42</Sub>
+<Data>0.81</Data>
+</Node>
+<Node><Sub>H43</Sub>
+<Data>100</Data>
+</Node>
+<Node><Sub>H44</Sub>
+<Data>10</Data>
+</Node>
+<Node><Sub>H6</Sub>
+<Data>28</Data>
+</Node>
+<Node><Sub>H7</Sub>
+<Data>0</Data>
+</Node>
+<Node><Sub>H9</Sub>
+<Data>100</Data>
+</Node>
+<Node><Sub>I1</Sub>
+<Data>Bill Pay</Data>
+</Node>
+<Node><Sub>J1</Sub>
+<Data>Debit Card</Data>
+</Node>
+<Node><Sub>K1</Sub>
+<Data>Account</Data>
+</Node>
+<Node><Sub>K10</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K11</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K12</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K13</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K14</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K15</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K16</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K17</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K18</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K19</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K20</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K21</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K22</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K23</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K24</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K25</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K26</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K27</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K28</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K29</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K3</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K30</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K31</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K32</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K33</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K34</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K35</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K36</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K37</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K38</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K39</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K4</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K40</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K41</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K42</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K43</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K44</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K45</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K5</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K6</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K7</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K8</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>K9</Sub>
+<Data>Cash</Data>
+</Node>
+<Node><Sub>L1</Sub>
+<Data>Balance</Data>
+</Node>
+<Node><Sub>L10</Sub>
+<Data>164.85</Data>
+</Node>
+<Node><Sub>L11</Sub>
+<Data>204.85</Data>
+</Node>
+<Node><Sub>L12</Sub>
+<Data>661.26</Data>
+</Node>
+<Node><Sub>L13</Sub>
+<Data>840.53</Data>
+</Node>
+<Node><Sub>L14</Sub>
+<Data>620.53</Data>
+</Node>
+<Node><Sub>L15</Sub>
+<Data>520.53</Data>
+</Node>
+<Node><Sub>L16</Sub>
+<Data>320.53</Data>
+</Node>
+<Node><Sub>L17</Sub>
+<Data>350.53</Data>
+</Node>
+<Node><Sub>L18</Sub>
+<Data>290.53</Data>
+</Node>
+<Node><Sub>L19</Sub>
+<Data>810.53</Data>
+</Node>
+<Node><Sub>L2</Sub>
+<Data>100</Data>
+</Node>
+<Node><Sub>L20</Sub>
+<Data>480.53</Data>
+</Node>
+<Node><Sub>L21</Sub>
+<Data>280.53</Data>
+</Node>
+<Node><Sub>L22</Sub>
+<Data>240.52999999999997</Data>
+</Node>
+<Node><Sub>L23</Sub>
+<Data>240.52999999999997</Data>
+</Node>
+<Node><Sub>L24</Sub>
+<Data>206.52999999999997</Data>
+</Node>
+<Node><Sub>L25</Sub>
+<Data>906.53</Data>
+</Node>
+<Node><Sub>L26</Sub>
+<Data>706.53</Data>
+</Node>
+<Node><Sub>L27</Sub>
+<Data>506.53</Data>
+</Node>
+<Node><Sub>L28</Sub>
+<Data>406.53</Data>
+</Node>
+<Node><Sub>L29</Sub>
+<Data>246.52999999999997</Data>
+</Node>
+<Node><Sub>L3</Sub>
+<Data>66.85</Data>
+</Node>
+<Node><Sub>L30</Sub>
+<Data>201.52999999999997</Data>
+</Node>
+<Node><Sub>L31</Sub>
+<Data>197.05999999999997</Data>
+</Node>
+<Node><Sub>L32</Sub>
+<Data>121.29999999999997</Data>
+</Node>
+<Node><Sub>L33</Sub>
+<Data>191.29999999999995</Data>
+</Node>
+<Node><Sub>L34</Sub>
+<Data>21.299999999999955</Data>
+</Node>
+<Node><Sub>L35</Sub>
+<Data>281.29999999999995</Data>
+</Node>
+<Node><Sub>L36</Sub>
+<Data>156.29999999999995</Data>
+</Node>
+<Node><Sub>L37</Sub>
+<Data>17.789999999999964</Data>
+</Node>
+<Node><Sub>L38</Sub>
+<Data>30.709999999999965</Data>
+</Node>
+<Node><Sub>L39</Sub>
+<Data>20.709999999999965</Data>
+</Node>
+<Node><Sub>L4</Sub>
+<Data>66.85</Data>
+</Node>
+<Node><Sub>L40</Sub>
+<Data>20.709999999999965</Data>
+</Node>
+<Node><Sub>L41</Sub>
+<Data>159.70999999999998</Data>
+</Node>
+<Node><Sub>L42</Sub>
+<Data>158.89999999999998</Data>
+</Node>
+<Node><Sub>L43</Sub>
+<Data>58.89999999999998</Data>
+</Node>
+<Node><Sub>L44</Sub>
+<Data>48.89999999999998</Data>
+</Node>
+<Node><Sub>L45</Sub>
+<Data>88.89999999999998</Data>
+</Node>
+<Node><Sub>L5</Sub>
+<Data>92.85</Data>
+</Node>
+<Node><Sub>L6</Sub>
+<Data>64.85</Data>
+</Node>
+<Node><Sub>L7</Sub>
+<Data>64.85</Data>
+</Node>
+<Node><Sub>L8</Sub>
+<Data>164.85</Data>
+</Node>
+<Node><Sub>L9</Sub>
+<Data>64.85</Data>
+</Node>
+<Node><Sub>M1</Sub>
+<Data>Status</Data>
+</Node>
+</Node>
+</Node>
+</Global>
+</Export>

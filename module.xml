@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+  <Document name="excel-python-iris.ZPM">
+    <Module>
+      <Name>excel-python-iris</Name>
+      <Version>0.0.1</Version>
+      <Description>excel-python-iris</Description>
+      <Packaging>module</Packaging>
+      <SourcesRoot>src</SourcesRoot>
+      <Resource Name="otw.iris.PKG"/>
+      <FileCopy Name="excel/" Target="${mgrdir}excel/"/>
+      <FileCopy Name="python/" Target="${mgrdir}python/"/>
+      <Dependencies>
+        <ModuleReference>
+          <Name>iris-globals-contest</Name>
+          <Version>*</Version>
+        </ModuleReference>
+      </Dependencies>
+    </Module>
+  </Document>
+</Export>

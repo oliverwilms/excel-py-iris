@@ -1,0 +1,14 @@
+services:
+  iris:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    command: --ISCAgent false
+    container_name: excel-python-iris
+    restart: always
+    ports: 
+      - 51972:1972
+      - 53795:52773
+      - 53773
+    volumes:
+      - ./:/irisdev/app
