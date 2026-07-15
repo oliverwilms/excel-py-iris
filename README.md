@@ -1,4 +1,4 @@
-# excel-python-iris
+# excel-py-iris
 
 ## Prerequisites
 Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
@@ -7,7 +7,7 @@ Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installi
 Clone/git pull the repo into any local directory
 
 ```
-$ git clone https://github.com/oliverwilms/excel-python-iris.git
+$ git clone https://github.com/oliverwilms/excel-py-iris.git
 ```
 
 Open the terminal in this directory and run:
