@@ -4,7 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile
     command: --ISCAgent false
-    container_name: excel-python-iris
+    container_name: excel-py-iris
     restart: always
     ports: 
       - 51972:1972
