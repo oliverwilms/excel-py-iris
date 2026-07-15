@@ -16,7 +16,6 @@ COPY module.xml module.xml
 COPY --chown=${ISC_PACKAGE_MGRUSER}:${ISC_PACKAGE_IRISGROUP} python python
 COPY --chown=${ISC_PACKAGE_MGRUSER}:${ISC_PACKAGE_IRISGROUP} python /usr/irissys/mgr/python
 COPY --chown=${ISC_PACKAGE_MGRUSER}:${ISC_PACKAGE_IRISGROUP} src src
-COPY --chown=${ISC_PACKAGE_MGRUSER}:${ISC_PACKAGE_IRISGROUP} yaml yaml
 RUN mkdir -p inbox archive tests
 RUN pip install iris-embedded-python-wrapper --upgrade --break-system-packages
 RUN iris start IRIS && iris session IRIS < iris.script && iris stop IRIS quietly
