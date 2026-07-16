@@ -62,11 +62,9 @@ Method OnAfterProductionStart() As %Status
 Method OnBeforeProductionStart() As %Status
 {
  Set tSC = $$$OK
- Set tFilename = "excel_python_iris.xlsx"
  Set tSourceDir = "/opt/irisapp/excel"
  Set tTargetDir = "/opt/irisapp/inbox"
- // CopyFile(FileName As %String = "", SourceDir As %String = "", TargetDir As %String = "") as %Status
- Set tSC = ..CopyFile(tFilename,tSourceDir,tTargetDir)
+ Set tSC = ##class(otw.iris.util).CopyDirectory(tSourceDir,tTargetDir)
  Quit tSC
 }
 
