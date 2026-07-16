@@ -1,6 +1,23 @@
 Class otw.iris.util
 {
 
+ClassMethod CopyDirectory(pSourceDir, pTargetDir) As %String
+{
+    Set tSC = ##class(otw.iris.util).FileSet(.pFileList,pSourceDir)
+    Set tCount = pFileList.Count()
+    For ii = 1:1:tCount {
+        Set tFileData = pFileList.GetAt(ii)
+        Set tFilePath = $Piece(tFileData,";",6)
+        Set tFilename = ##class(%File).GetFilename(tFilePath)
+        Set from = ##class(%File).NormalizeFilename(tFilename,pSourceDir)
+        Set to = ##class(%File).NormalizeFilename(tFilename,pTargetDir)
+        Set success = ##class(%File).CopyFile(from,to)
+        If success { Continue }
+        Quit
+    }
+    Quit success
+}
+
 /// Get a list of files in the directory configured by FilePath.
 /// The filenames are returned in a %ListOfDataTypes object. Each entry in the list is
 /// a semicolon-separated string containing: Filename;Type;Size;DateCreated;DateModified;FullPathName
