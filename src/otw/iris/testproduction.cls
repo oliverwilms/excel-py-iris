@@ -43,4 +43,31 @@ Method CheckResults(ByRef Log As %String, New As %String) As %Status
  Return tSC
 }
 
+/*
+/// Code to run right after the production is started.
+Method OnAfterProductionStart() As %Status
+{
+ Set request = ##class(Ens.StringRequest).%New()
+ set request.StringValue="Hello Productions"
+ Set tSC = ..SendRequest( "Tutorial.ExampleOperation" ,request, 
+                                                       .response,1,40)
+ Do $$$AssertEquals(response.StringValue,"OK","Response should contain OK.")
+ Set request.StringValue=""
+ Set tSC = ..SendRequest( "Tutorial.ExampleOperation" ,request, 
+                                                        .response,1,40)
+ Return $$$OK
+}
+*/
+/// Code to run right before the production is started.
+Method OnBeforeProductionStart() As %Status
+{
+ Set tSC = $$$OK
+ Set tFilename = "excel_python_iris.xlsx"
+ Set tSourceDir = "/opt/irisapp/excel"
+ Set tTargetDir = "/opt/irisapp/inbox"
+ // CopyFile(FileName As %String = "", SourceDir As %String = "", TargetDir As %String = "") as %Status
+ Set tSC = ..CopyFile(tFilename,tSourceDir,tTargetDir)
+ Quit tSC
+}
+
 }
