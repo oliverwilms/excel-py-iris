@@ -29,6 +29,7 @@ XData BPL [ XMLNamespace = "http://www.intersystems.com/bpl" ]
 </code>
 <code name='Python' xpos='200' ypos='450' >
 <![CDATA[ Set context.ExcelName = ##class(otw.iris.util).GetExcelName(request.OriginalFilename)
+ Set success = ##class(%File).Rename(request.OriginalFilename,context.ExcelName)
  Set py2 = ##class(%SYS.Python).Import("iter_excel")
  Do py2."iterate_excel_all_sheets"(context.ExcelName)]]>
 </code>
