@@ -22,6 +22,13 @@ $ docker-compose up -d
 $ docker-compose exec -it iris python3 /usr/irissys/mgr/python/iter_excel.py /opt/irisapp/excel/excel_python_iris.xlsx
 ```
 
+## Create REST application for File Uploads
+
+```
+Set obj = {}.%FromJSONFile("/irisdev/app/openapi/upload_file_openapi_v2_spec.json")
+zw ##class(%REST.API).CreateApplication("api.file",obj,.features,.new,.err)
+```
+
 ## Run Python script from Interoperability BPL / Testing Productions
 
 ```
