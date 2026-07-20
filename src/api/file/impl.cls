@@ -14,10 +14,21 @@ Parameter ExposeServerExceptions = 0;
 ///     description, Legacy description field. Use metadata field for structured JSON going forward.<br/>
 ClassMethod uploadFile(file As %Stream.Object, metadata As %String, description As %String) As %DynamicObject
 {
+    Set otw = $I(^TESTunit("uploadFile"))
+    Set ^TESTunit("files",otw,"file")=$GET(file)
+    Set ^TESTunit("files",otw,"desc")=$GET(description)
     //(Place business logic here)
-    //Do ..%SetStatusCode(<HTTP_status_code>)
+    Do ..%SetStatusCode(200)
+    //(Place business logic here)
+    //Do ##class(Oliver.RequestLogger).NewRequest(%request)
+    //Set oRequestLogger = ##class(Oliver.RequestLogger).NewRequest(%request)
+    Set tStatusCode = 200  // oRequestLogger.StatusCode
+    Do ..%SetStatusCode(tStatusCode)
     //Do ..%SetHeader(<name>,<value>)
     //Quit (Place response here) ; response may be a string, stream or dynamic object
+    Quit "returnString"
+    //Set tReturnString = $System.Status.GetErrorText(oRequestLogger.Status)
+    //Quit tReturnString
 }
 
 }
