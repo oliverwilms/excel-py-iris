@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="IRIS" version="26" zv="IRIS for UNIX (Ubuntu Server LTS for x86-64 Containers) 2026.1 (Build 234U)" ts="2026-07-21 00:53:43">
+<Class name="api.file.disp">
+<Description>
+Upload file.
+Dispatch class defined by RESTSpec in api.file.spec</Description>
+<ProcedureBlock>1</ProcedureBlock>
+<Super>%CSP.REST</Super>
+<TimeChanged>67771,72225.885210082</TimeChanged>
+<TimeCreated>67771,72225.837320698</TimeCreated>
+<GeneratedBy>api.file.spec.cls</GeneratedBy>
+
+<Parameter name="SpecificationClass">
+<Description>
+The class containing the RESTSpec which generated this class</Description>
+<Default>api.file.spec</Default>
+</Parameter>
+
+<Parameter name="IgnoreWrites">
+<Description>
+Ignore any writes done directly by the REST method.</Description>
+<Default>1</Default>
+</Parameter>
+
+<Parameter name="CONTENTTYPE">
+<Description>
+Default the Content-Type for this application.</Description>
+<Default>application/json</Default>
+</Parameter>
+
+<Parameter name="CONVERTINPUTSTREAM">
+<Description>
+By default convert the input stream to Unicode</Description>
+<Default>1</Default>
+</Parameter>
+
+<XData name="UrlMap">
+<XMLNamespace>http://www.intersystems.com/urlmap</XMLNamespace>
+<Data><![CDATA[
+<Routes>
+  <!-- Upload a file -->
+  <Route Url="/upload-file" Method="post" Call="uploadFile" />
+</Routes>
+]]></Data>
+</XData>
+
+<Method name="uploadFile">
+<Description>
+Upload a file</Description>
+<ClassMethod>1</ClassMethod>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+    Try {
+        If $case(%request.ContentType,"multipart/form-data":0,:1) {
+            Try {
+                Do ##class(api.file.impl).%ReportRESTError(..#HTTP415UNSUPPORTEDMEDIATYPE,$$$ERROR($$$RESTContentType,%request.ContentType))
+            } Catch {
+                Do ##class(%REST.Impl).%ReportRESTError(..#HTTP415UNSUPPORTEDMEDIATYPE,$$$ERROR($$$RESTContentType,%request.ContentType))
+            }
+            Quit
+        }
+        Do ##class(%REST.Impl).%SetContentType("application/json")
+        If '##class(%REST.Impl).%CheckAccepts("application/json") {
+            Try {
+                Do ##class(api.file.impl).%ReportRESTError(..#HTTP406NOTACCEPTABLE,$$$ERROR($$$RESTBadAccepts))
+            } Catch {
+                Do ##class(%REST.Impl).%ReportRESTError(..#HTTP406NOTACCEPTABLE,$$$ERROR($$$RESTBadAccepts))
+            }
+            Quit
+        }
+        If '$data(%request.MimeData("file",1)) Do ##class(%REST.Impl).%ReportRESTError(..#HTTP400BADREQUEST,$$$ERROR($$$RESTRequired,"file")) Quit
+        If $data(%request.MimeData("file",2)) {
+            Do ##class(%REST.Impl).%ReportRESTError(..#HTTP400BADREQUEST,$$$ERROR($$$RESTDuplicate,"file")) Quit
+        }
+        Set pfile=%request.MimeData("file",1)
+        Set stream=##class(%GlobalCharacterStream).%New()
+        If $isobject(pfile) {
+            Do pfile.Rewind()
+            Set sc=stream.CopyFrom(pfile)
+        } Else {
+            Set sc=stream.Write(pfile)
+        }
+        If $$$ISERR(sc) Do ##class(%REST.Impl).%ReportRESTError(..#HTTP400BADREQUEST,$$$ERROR($$$RESTInvalid,"file",pfile)) Quit
+        Set pfile=stream
+        If $data(%request.Data("metadata",2)) {
+            Do ##class(%REST.Impl).%ReportRESTError(..#HTTP400BADREQUEST,$$$ERROR($$$RESTDuplicate,"metadata")) Quit
+        }
+        If $data(%request.Data("metadata",1)) {
+            Set pmetadata=%request.Data("metadata",1)
+        }
+        If $data(%request.Data("description",2)) {
+            Do ##class(%REST.Impl).%ReportRESTError(..#HTTP400BADREQUEST,$$$ERROR($$$RESTDuplicate,"description")) Quit
+        }
+        If $data(%request.Data("description",1)) {
+            Set pdescription=%request.Data("description",1)
+        }
+        Set response=##class(api.file.impl).uploadFile(pfile,.pmetadata,.pdescription)
+        Do ##class(api.file.impl).%WriteResponse(response)
+    } Catch (ex) {
+        Try {
+            Do ##class(api.file.impl).%ReportRESTError(..#HTTP500INTERNALSERVERERROR,ex.AsStatus(),$parameter("api.file.impl","ExposeServerExceptions"))
+        } Catch {
+            Do ##class(%REST.Impl).%ReportRESTError(..#HTTP500INTERNALSERVERERROR,ex.AsStatus(),$parameter("api.file.impl","ExposeServerExceptions"))
+        }
+    }
+    Quit $$$OK
+]]></Implementation>
+</Method>
+</Class>
+</Export>
