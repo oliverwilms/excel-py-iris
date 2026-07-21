@@ -6,7 +6,7 @@ ClassMethod CallRESTapi(pIris As %String, pUrl As %String, ByRef pResponseData A
 	#define maxRESTapiErr 3
 	#define maxRetries 2
 	//#define timeout 12
-	Do ..DebugTEST("Oliver.Util - CallRESTapi")
+	Do ..DebugTEST("otw.iris.test - CallRESTapi")
 	Do ..DebugTEST("pIris = "_$Get(pIris))
 	Do ..DebugTEST("pUrl = "_$Get(pUrl))
 	Do ..DebugTEST("pType = "_$Get(pType))
@@ -28,7 +28,7 @@ ClassMethod CallRESTapi(pIris As %String, pUrl As %String, ByRef pResponseData A
 		}
 		If (pBody '= "") {
 			Do tRequest.EntityBody.Write(pBody)
-			Do ..DebugTEST("Oliver.Util - pBody")
+			Do ..DebugTEST("otw.iris.test - pBody")
 
 		}
 		If (tPort = 443) {
@@ -45,7 +45,7 @@ ClassMethod CallRESTapi(pIris As %String, pUrl As %String, ByRef pResponseData A
 		  If ("" = tReturn) {
 			Set tRequest.Username = ..GetTestUsername()
 			Set tRequest.Password = ..GetTestPassword()
-			Do ..DebugTEST("Oliver.Util - SYS")
+			Do ..DebugTEST("otw.iris.test - SYS")
 		  } Else {
 			Set delim = $Extract(tReturn,1,1)			  
 			Set tRequest.Username = $Piece(tReturn,delim,2)
@@ -409,7 +409,7 @@ blue
 }
 
 /*
-A common practice in Python is to use keyword arguments (also called “named arguments”) when defining a method. 
+A common practice in Python is to use keyword arguments (also called "named arguments") when defining a method. 
 This makes it easy to drop arguments when not needed or to specify arguments according to their names, not their positions.
 
 Since InterSystems IRIS does not have the concept of keyword arguments, you need to create a dynamic object to hold the keyword/value pairs
