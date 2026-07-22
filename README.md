@@ -16,6 +16,12 @@ Open the terminal in this directory and run:
 $ docker-compose up -d
 ```
 
+## Use curl to upload an Excel file
+
+```
+$ curl -v -u <username>:<password> -F "description=test.xlsx" -F "file=@Downloads\batch-1-products.xlsx" https://<server>/csp/files/upload-file
+```
+
 ## Run python code to read an excel file and populate IRIS global
 
 ```
