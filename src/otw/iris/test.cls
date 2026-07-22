@@ -331,7 +331,7 @@ ClassMethod TestRESTpdf2(pServer As %String = "p", pRoute As %String = "", pKill
 	Set pIris = ..GetTestConfigIRIS("oliver-test")
 	If ("p" = $Extract(pServer,1,1)) Set pIris = ..GetTestConfigIRIS("portal")
 	Set pUrl = "/pdf/upload-pdf"
-	If ("p" = $Extract(pServer,1,1)) Set pUrl = "/csp/testpdf/upload-pdf"
+	If ("p" = $Extract(pServer,1,1)) Set pUrl = "/csp/files/upload-file"
 	If ("p" = $Extract(pRoute,1,1)) Set pUrl = "/csp/pdf/EnsLib.REST.GenericService/upload-pdf"
 	If ("t" = $Extract(pRoute,1,1)) Set pUrl = "/pdf/test"
 	If ("t" = $Extract(pRoute,1,1)),("p" = $Extract(pServer,1,1)) Set pUrl = "/csp/testpdf/test"
