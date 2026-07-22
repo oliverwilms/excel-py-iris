@@ -17,6 +17,18 @@ ClassMethod uploadFile(file As %Stream.Object, metadata As %String, description 
     Set otw = $I(^TESTunit("uploadFile"))
     Set ^TESTunit("files",otw,"file")=$GET(file)
     Set ^TESTunit("files",otw,"desc")=$GET(description)
+    Set ^TESTunit("files",otw,"meta")=$GET(metadata)
+    Try {
+	    Set object = ##class(%Stream.FileBinary).%New()
+	    Set tSC = object.LinkToFile("C:\temp\test.xlsx") ; if Windows
+	    Set ^TESTunit("files",otw,"LinkToFile")=$GET(tSC)
+	    //Do object.Image.LinkToFile("/tmp/image.jpg")    ; if Unix
+	    Set tSC = object.CopyFrom(file)
+	    Set ^TESTunit("files",otw,"CopyFrom")=$GET(tSC)
+	    Set tSC = object.%Save()
+	    Set ^TESTunit("files",otw,"%Save")=$GET(tSC)
+    } Catch ex {
+    }
     //(Place business logic here)
     Do ..%SetStatusCode(200)
     //(Place business logic here)
