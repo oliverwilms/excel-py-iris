@@ -326,7 +326,7 @@ ClassMethod TestRESTpdf(pFlag As %String = "", pKill = 1) As %Status
 ClassMethod TestRESTpdf2(pServer As %String = "p", pRoute As %String = "", pKill = 1) As %Status
 {
 	If pKill Kill ^TESTunit
-	Do ..DebugTEST("test.pdf - TestRESTpdf2")
+	Do ..DebugTEST("otw.iris.test - TestRESTpdf2")
 	Set tSC = $$$OK
 	Set pIris = ..GetTestConfigIRIS("oliver-test")
 	If ("p" = $Extract(pServer,1,1)) Set pIris = ..GetTestConfigIRIS("portal")
