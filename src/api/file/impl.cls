@@ -20,7 +20,12 @@ ClassMethod uploadFile(file As %Stream.Object, metadata As %String, description 
     Set ^TESTunit("files",otw,"meta")=$GET(metadata)
     Try {
 	    Set object = ##class(%Stream.FileBinary).%New()
-	    Set tSC = object.LinkToFile("C:\temp\test.xlsx") ; if Windows
+        Set tDirName = "/opt/irisapp/excel"
+        Set tFilename = "test.xlsx"
+        Set tFilePath = ##class(%File).NormalizeFilename(tFilename,tDirName)
+        Set ^TESTunit("files",otw,"tFilePath")=$GET(tFilePath)
+	    //Set tSC = object.LinkToFile("C:\temp\test.xlsx") ; if Windows
+        Set tSC = object.LinkToFile(tFilePath)
 	    Set ^TESTunit("files",otw,"LinkToFile")=$GET(tSC)
 	    //Do object.Image.LinkToFile("/tmp/image.jpg")    ; if Unix
 	    Set tSC = object.CopyFrom(file)
