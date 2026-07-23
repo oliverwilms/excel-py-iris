@@ -7,6 +7,7 @@
       <Description>excel-py-iris</Description>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
+      <Resource Name="api.file.PKG"/>
       <Resource Name="otw.iris.PKG"/>
       <FileCopy Name="excel/" Target="${mgrdir}excel/"/>
       <FileCopy Name="python/" Target="${mgrdir}python/"/>
