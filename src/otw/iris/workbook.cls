@@ -1,14 +1,19 @@
 Class otw.iris.workbook
 {
 
-ClassMethod importWorkbook(pSkipSheets = 4, pDebug = 0, pKill = 1) As %Status
+ClassMethod importWorkbook(pSkipSheets = "", pDebug = 0, pKill = 1) As %Status
 {
-	Set tSC = $$$OK
+	Set tSC = ##class(otw.iris.config).check()
+	If (0 = tSC) {
+		Write "You need to run ##class(otw.iris.config).setup()"
+		Quit tSC
+	}
 	If (1 = pKill) { Kill ^excel }
 	Set tSheet = $Get(pSkipSheets)
 	For {
 		Set tSheet = $Order(^wbook(tSheet),1)
 		If (tSheet = "") { Quit }
+		If $Get(^config("skip","sheet",tSheet)) { Continue }
 		Set tSC = ..ImportWorkbookSheet(tSheet)
 		If $$$ISERR(tSC) { Quit }
 	}
