@@ -55,4 +55,18 @@ ClassMethod ImportWorkbookSheet(pSheet As %String = "", pDebug = 0) As %Status
 	Quit tSC
 }
 
+ClassMethod ListWorkbookSheets(pSkipSheets = "", pDebug = 0, pKill = 1) As %Status
+{
+	Set tSC = $$$OK
+	If (1 = pKill) { Kill ^excel }
+	Set tSheet = $Get(pSkipSheets)
+	For {
+		Set tSheet = $Order(^wbook(tSheet),1)
+		If (tSheet = "") { Quit }
+		Write tSheet,!
+		If $$$ISERR(tSC) { Quit }
+	}
+	Quit tSC
+}
+
 }
