@@ -37,6 +37,10 @@ zw ##class(%REST.API).CreateApplication("api.file",obj,.features,.new,.err)
 
 Remember to create a web application with api.file.disp as Dispatch class.
 
+```
+USER>d ##class(api.file.config).CreateWebApp()
+```
+
 ## Run Python script from Interoperability BPL / Testing Productions
 
 ```
